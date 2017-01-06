@@ -28,7 +28,7 @@ angular.module("PrintHen.myApp", ['ui.router'])
             .success(function (data, status, headers, config) {
                 $scope.PostDataResponse = data.history;
                  $scope.data = $scope.PostDataResponse
-                console.log("Vijithalv")
+                // console.log("narendra")
               
             })
             .error(function (data, status, header, config) {
@@ -44,7 +44,7 @@ angular.module("PrintHen.myApp", ['ui.router'])
 
 
             // Another function for search printhistory
-             $scope.searchVal = "Enter"
+             $scope.searchVal = ""
              $scope.search = function () {
                   //$scope.data.splice(0,$scope.data.length)      
                  $scope.data = [];

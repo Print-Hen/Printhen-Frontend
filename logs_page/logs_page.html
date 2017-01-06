@@ -20,11 +20,11 @@
 	<div class="row">
 		<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
         	
-			<form ng-app="app" ng-controller="HttpGetController" role="form">
+			<form ng-submit = "Login()"  ng-app="app" ng-controller="HttpGetController" role="form">
 
 				<div class="form-content">
 					<div class="form-group">
-						<input type="text" class="form-control input-underline input-lg" ng-model="username" id="" placeholder="Username">
+						<input type="email" class="form-control input-underline input-lg" ng-model="username" id="" placeholder="Username">
 					</div>
 
 					<div class="form-group">
@@ -39,11 +39,11 @@
 					</div>
 
 					<div class="form-group">
-						<input type="text" class="form-control input-underline input-lg" ng-model="admin_email" id="" placeholder="Admin Email">
+						<input type="email" class="form-control input-underline input-lg" ng-model="admin_email" id="" placeholder="Admin Email">
 					</div>
 				</div>
 
-				<button ng-click = "Login()" class="btn btn-white btn-outline btn-lg btn-rounded">Login</button>
+				<input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded" value="Login">Login</button>
 
 			</form>
 
