@@ -1,0 +1,89 @@
+<ng-controller="subController">
+<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Admin Home Page</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#logs"><i class="fa fa-home"></i> Home</a></li>
+    
+        <li><a ng-href="#printhistory" ng-click="go()"><i class="fa fa-comment"></i> PrintHistory</a></li>
+      </ul>
+    </div>
+</nav> 
+
+<div id="main">
+ <div class="jumbotron text-center" >
+  
+<h3> PrintHistory </h3>  <br><br>
+                
+               <div class="row"> 
+               <div class="col-md-4">
+
+               </div>
+     
+               <div class="col-md-4">
+                   <div class="bar">
+                      <input type="text" ng-model="searchVal" class="search" ng-keypress="search()" placeholder="Enter email to search " />
+              
+                  </div>
+                 
+                <!--  <div ng-if="collection.email=='search'">
+               
+    
+               
+     
+          <table> 
+            <thead>
+              <tr>
+                <th > Count </th>
+                <th > Order Id</th>
+                <th > Email </th>
+                   
+              </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="collection in PostDataResponse |  filter: { email:search }">
+                <td >{{ collection.count }}</td>
+                <td >{{ collection.id }}</td>
+                <td >{{ collection.email }}</td>
+                </tr>
+
+               </tbody>
+            </table>
+
+           
+         </div>
+      </div>
+    </div>   -->
+
+
+<center>
+ 
+     
+          <table>
+            <thead>
+              <tr>
+                <th > Count </th>
+                <th > Order Id</th>
+                <th > Email </th>
+                   
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="collection in data| limitTo:10" >
+                <td >{{ collection.count }}</td>
+                <td >{{ collection.id }}</td>
+                <td >{{ collection.email }}</td>
+                
+              </tr>
+           
+            </tbody>
+          </table>
+    
+     
+  </center>
+
+ </div>
+</div>

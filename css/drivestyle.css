@@ -1,0 +1,80 @@
+md-tooltip.large .md-content {
+    height:30px;
+    font-size: 20px; 
+    opacity: 0.9;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 20px;
+    overflow: hidden;
+    border: none;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: #ff3300;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+md-input-container.large {
+	style="width:100%;
+	margin:auto;
+}
+
+.sign-out-button {
+
+	width:71%;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+md-button.sign-out {
+	width:20%;	
+
+}
+
+.noResult {
+	width: 100%;
+	margin:auto;
+	font-size:20px;
+	opacity: 0.5;
+}
+.back-button {
+
+	width:71%;
+	margin:auto;
+	padding-bottom: 20px;
+}
+
+md-button.back {
+	width:20%;
+	
+}
+
+.Search {
+	style="width:100%;
+	margin:auto;
+	font-size:28px;
+	background-color:#e6e6e6;
+}
+
+.Search::-webkit-input-placeholder {
+    font-size: 28px;
+    line-height: 1;
+}
+md-card.items {
+
+	width: 250px; 
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+md-card.backgroundcard {
+
+	width:70%; 
+	margin:auto;
+	background-color:#f2f2f2;
+}

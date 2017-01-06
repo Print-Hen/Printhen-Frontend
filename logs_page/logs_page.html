@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-default" style="background-color: #F0FFFF">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Admin Home Page</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#logs"><i class="fa fa-home"></i> Home</a></li>
+       
+        <li><a href="#printhistory"> PrintHistory</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div id="main" style="padding-left: 30%;padding-right: 30%;padding-bottom: 10%; background-color: #F0FFFF; ">
+  <div class="jumbotron text-center" style="background-color: #F0FFFF;">
+ <div class="login-page">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+        	
+			<form ng-app="app" ng-controller="HttpGetController" role="form">
+
+				<div class="form-content">
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" name="username" id="" placeholder="Username">
+					</div>
+
+					<div class="form-group">
+						<input type="password" class="form-control input-underline input-lg" name="password" id="" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" name="smtp_hostname" id="" placeholder="S M T P">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" name="imap_hostname" id="" placeholder="I M A P">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control input-underline input-lg" name="admin_email" id="" placeholder="Admin Email">
+					</div>
+				</div>
+
+				<button ng-click = "Login()" class="btn btn-white btn-outline btn-lg btn-rounded">Login</button>
+
+			</form>
+
+		</div>	
+	</div>
+
+</div>
+</div>
+</div>
