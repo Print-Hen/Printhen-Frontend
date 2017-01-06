@@ -4,7 +4,11 @@
 angular.module("PrintHen.app", ['ui.router'])
 .controller("HttpGetController", function ($scope, $http) {
        
-       
+       $scope.username;
+       $scope.password;
+       $scope.smtp_hostname;
+       $scope.imap_hostname;
+       $scope.admin_email;
 
         $scope.Login = function () {
             
@@ -29,6 +33,7 @@ angular.module("PrintHen.app", ['ui.router'])
                  console.log("Success");
 
                 alert("Server Started Successfully");
+
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +
@@ -36,7 +41,7 @@ angular.module("PrintHen.app", ['ui.router'])
                     "<hr />headers: " + header +
                     "<hr />config: " + config;
 
-                    console.log("Wrong details");
+                  
                     alert("Please check the credintionals!! ");
                    
                   
