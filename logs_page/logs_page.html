@@ -21,29 +21,33 @@
 		<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
         	
 			<form ng-submit = "Login()"  ng-app="app" ng-controller="HttpGetController" role="form">
-
+				<span style="float:left" class="label label-primary">Username</span>
 				<div class="form-content">
 					<div class="form-group">
+						
 						<input type="email" class="form-control input-underline input-lg" ng-model="username" id="" placeholder="Username">
 					</div>
-
+					<span style="float:left" class="label label-primary">Password</span>
 					<div class="form-group">
 						<input type="password" class="form-control input-underline input-lg" ng-model="password" id="" placeholder="Password">
 					</div>
+					<span style="float:left" class="label label-primary">SMTP Hostname</span>
 					<div class="form-group">
 						<input type="text" class="form-control input-underline input-lg" ng-model="smtp_hostname" id="" placeholder="S M T P">
 					</div>
 
+					<span style="float:left" class="label label-primary">IMAP Hostname</span>
 					<div class="form-group">
 						<input type="text" class="form-control input-underline input-lg" ng-model="imap_hostname" id="" placeholder="I M A P">
 					</div>
 
+					<span style="float:left" class="label label-primary">Admin Email</span>
 					<div class="form-group">
 						<input type="email" class="form-control input-underline input-lg" ng-model="admin_email" id="" placeholder="Admin Email">
 					</div>
 				</div>
 
-				<input type="submit" class="btn btn-white btn-outline btn-lg btn-rounded" value="Login">Login</button>
+				<input style="width:60%" type="submit" class="btn btn-primary btn-outline btn-lg btn-rounded" value="Save">Save</button>
 
 			</form>
 

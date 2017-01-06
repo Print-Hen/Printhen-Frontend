@@ -10,7 +10,22 @@ angular.module("PrintHen.app", ['ui.router'])
        $scope.imap_hostname;
        $scope.admin_email;
 
-
+        $scope.$on('$viewContentLoaded', function(){
+              $scope.getDetails();
+              console.log("sss")
+        });
+       $scope.getDetails = function() {
+           $http.post('http://printhen.local:8001/api/getdetails/',null)
+                .success(function (data, status) {
+                    $scope.username = data.username
+                    $scope.password = data.password
+                    $scope.smtp_hostname = data.smtp_hostname
+                    $scope.imap_hostname = data.imap_hostname
+                    $scope.admin_email = data.admin_email
+            }).error(function(data,status,headers,config){
+                    alert("Error fetching data");
+            });
+       }
        var validateInput = function() {
          if($scope.username == null) {
             return false;
