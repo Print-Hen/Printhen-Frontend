@@ -4,11 +4,15 @@
 angular.module("PrintHen.myApp", ['ui.router'])
 .controller("subController", function ($scope, $http) {
 
- 
-        console.log("pori")
+      
   
 
         $scope.data;
+
+        $scope.$on('$viewContentLoaded', function(){
+              $scope.go();
+        console.log("pori")
+        });
         $scope.go = function () {
           
           console.log("pori2");
