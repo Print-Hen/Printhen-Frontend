@@ -65,18 +65,15 @@
           <table>
             <thead>
               <tr>
-                <th > Count </th>
-                <th > Order Id</th>
                 <th > Email </th>
+                <th > Total Prints</th>
                    
               </tr>
             </thead>
             <tbody>
               <tr ng-repeat="collection in data| limitTo:10" >
-                <td >{{ collection.count }}</td>
-                <td >{{ collection.id }}</td>
                 <td >{{ collection.email }}</td>
-                
+                <td >{{ collection.count }}</td>
               </tr>
            
             </tbody>
